@@ -35,4 +35,4 @@ jobs:
         uses: mwhitaker/dbt-action@master
         with:
           dbt_command: "dbt run"
-          dbt_project_folder: "dbt_project"
+          dbt_project_folder: "dbt-tutorial"
