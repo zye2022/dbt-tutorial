@@ -34,4 +34,5 @@ jobs:
       - name: dbt-action
         uses: mwhitaker/dbt-action@master
         with:
+          path: ../
           dbt_command: "dbt run"
