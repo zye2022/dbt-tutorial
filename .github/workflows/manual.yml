@@ -30,7 +30,7 @@ jobs:
       run: echo "Hello ${{ github.event.inputs.name }}"
   dbt_demo: 
     steps:
-    - name: dbt-action
+      - name: dbt-action
         uses: mwhitaker/dbt-action@master
         with:
           dbt_command: "dbt run --dbt-tutorial ."
