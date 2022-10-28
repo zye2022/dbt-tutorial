@@ -31,6 +31,8 @@ jobs:
   dbt_demo:
     runs-on: ubuntu-latest
     steps:
+      - name: checkout
+        uses: actions/checkout@v2
       - name: dbt-action
         uses: mwhitaker/dbt-action@master
         with:
