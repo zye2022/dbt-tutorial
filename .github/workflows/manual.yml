@@ -28,7 +28,8 @@ jobs:
     # Runs a single command using the runners shell
     - name: Send greeting
       run: echo "Hello ${{ github.event.inputs.name }}"
-  dbt_demo: 
+  dbt_demo:
+    runs-on: ubuntu-latest
     steps:
       - name: dbt-action
         uses: mwhitaker/dbt-action@master
